@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+#header-logo {
+  position: relative;
+  display: block;
+  left: 18vw;
+  width: 12vh;
+  padding: 2vh 1vh 1vh 1vh;
+}
+
+.title {
+  background-color: #0ea5dc;
+  color: white;
+  text-align: center;
+  height: 20vh;
+}
+
+.circle {
+  padding: 2vw;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  top: 24vh;
+  left: 31vw;
+  background-color: #f7f7f7;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.my-form {
+  display: block;
+}
+
+#formIcon {
+  width: 3vw;
+}
+
+#text-icon1,
+#text-icon2,
+#text-icon3,
+#help-icon {
+  display: inline-block;
+  width: 2vw;
+  vertical-align: middle;
+}
+
+.daFirstz,
+.daSecondz,
+.daThirdz,
+.daFourthz {
+  width: 30vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daFirstzTextz,
+.daSecondzTextz,
+.daThirdzTextz,
+.daFourthzTextz {
+  padding: 1vh;
+}
+
+.footer {
+  background-color: #0a7fab;
+}
+
+#footer-logo {
+  width: 2vw;
+}
+/*# sourceMappingURL=index.css.map */

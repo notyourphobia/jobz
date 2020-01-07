@@ -1,0 +1,87 @@
+$backgroundGrey: #f7f7f7;
+$blue1: #0ea5dc;
+$blue2: #0a7fab;
+$iconBlue: #0ea5da;
+$helpLinkBlue: #2cb0e0;
+$footerBlue: #0a7fab;
+
+@mixin CircleBox {
+  padding: 2vw;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+@mixin textIcon {
+  display: inline-block;
+  width: 2vw;
+  vertical-align: middle;
+}
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $backgroundGrey;
+}
+#header-logo {
+  position: relative;
+  display: block;
+  left: 18vw;
+  width: 12vh;
+  padding: 2vh 1vh 1vh 1vh;
+}
+.title {
+  background-color: $blue1;
+  color: white;
+  text-align: center;
+  height: 20vh;
+}
+.circle {
+  @include CircleBox();
+  position: absolute;
+  top: 24vh;
+  left: 31vw;
+  background-color: $backgroundGrey;
+  width: fit-content;
+  height: fit-content;
+}
+.my-form {
+  //   margin: 30vw;
+  display: block;
+}
+#formIcon {
+  width: 3vw;
+}
+#text-icon1,
+#text-icon2,
+#text-icon3,
+#help-icon {
+  @include textIcon;
+}
+
+.daFirstz,
+.daSecondz,
+.daThirdz,
+.daFourthz {
+//   display: block;
+  width: 30vw;
+  height: fit-content; 
+  display: flex;
+  align-items: center;
+}
+
+.daFirstzTextz,
+.daSecondzTextz,
+.daThirdzTextz,
+.daFourthzTextz {
+//   display: flex;
+  padding: 1vh;
+
+  
+}
+
+.footer {
+  background-color: $footerBlue;
+}
+#footer-logo {
+  width: 2vw;
+}
