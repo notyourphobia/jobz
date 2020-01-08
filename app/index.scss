@@ -6,82 +6,158 @@ $helpLinkBlue: #2cb0e0;
 $footerBlue: #0a7fab;
 
 @mixin CircleBox {
-  padding: 2vw;
+  padding: 18px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
   border-radius: 50%;
 }
 @mixin textIcon {
   display: inline-block;
-  width: 2vw;
-  vertical-align: middle;
+  width: 32px;
+  //   vertical-align: middle;
+}
+@mixin footerLists {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 40px;
+  color: white;
+  a {
+    text-decoration: none;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    a {
+      color: rgba(255, 255, 255, 0.534);
+    }
+  }
 }
 * {
   margin: 0;
 }
 
 body {
+  background-color: $footerBlue;
+}
+.top {
   background-color: $backgroundGrey;
 }
 #header-logo {
   position: relative;
   display: block;
-  left: 18vw;
-  width: 12vh;
-  padding: 2vh 1vh 1vh 1vh;
+  margin: 0 200px;
+  width: 108px;
+  padding: 15px 10px 10px;
 }
 .title {
   background-color: $blue1;
   color: white;
   text-align: center;
-  height: 20vh;
+  height: 182px;
+}
+.titleText {
+  padding: 40px;
 }
 .circle {
   @include CircleBox();
   position: absolute;
-  top: 24vh;
-  left: 31vw;
+  top: 219px;
+  left: 345px;
   background-color: $backgroundGrey;
   width: fit-content;
   height: fit-content;
 }
-.my-form {
-  //   margin: 30vw;
-  display: block;
-}
 #formIcon {
-  width: 3vw;
+  width: 30px;
 }
-#text-icon1,
-#text-icon2,
-#text-icon3,
-#help-icon {
-  @include textIcon;
+.mainz-partz {
+  text-align: center;
+  height: 462px;
+  background-color: $backgroundGrey;
 }
-
+.my-form {
+  padding: 48px 81px 100px;
+  display: inline-block;
+  background-color: white;
+}
+.iconz-textz {
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  margin-left: 60px;
+}
 .daFirstz,
 .daSecondz,
 .daThirdz,
 .daFourthz {
-//   display: block;
-  width: 30vw;
-  height: fit-content; 
   display: flex;
   align-items: center;
+  width: 300px;
 }
 
+#text-icon1,
+#text-icon2,
+#text-icon3 {
+  @include textIcon;
+}
+
+#help-icon {
+  display: inline-block;
+  width: 45px;
+}
 .daFirstzTextz,
 .daSecondzTextz,
 .daThirdzTextz,
 .daFourthzTextz {
-//   display: flex;
-  padding: 1vh;
+  padding: 5px 10px;
+  text-align: left;
+}
 
-  
+.daFourthz {
+  margin-top: 20px;
 }
 
 .footer {
-  background-color: $footerBlue;
+  text-align: center;
+  height: 100%;
 }
+
+.contentz {
+  margin: 30px 10px;
+}
+
+.col-one {
+  @include footerLists();
+
+  h5 {
+    margin-top: 115px;
+    font-size: 8px;
+  }
+}
+
+.col-two {
+  @include footerLists();
+}
+
+.col-three {
+  @include footerLists();
+}
+
+.col-four {
+  @include footerLists();
+  li {
+    //   display: inline-block;
+
+    img {
+      // display: inline-block;
+      width: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
 #footer-logo {
-  width: 2vw;
+  width: 70px;
 }
