@@ -36,7 +36,6 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 219px;
-  left: 345px;
   background-color: #f7f7f7;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -44,6 +43,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 100;
 }
 
 #formIcon {
@@ -57,9 +57,11 @@ body {
 }
 
 .my-form {
+  position: absolute;
   padding: 48px 81px 100px;
   display: inline-block;
   background-color: white;
+  z-index: 90;
 }
 
 .iconz-textz {
