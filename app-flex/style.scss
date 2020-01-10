@@ -7,11 +7,8 @@ img {
 #Yt-icon {
   width: 16px;
 }
-[id^="text-icon"] {
-  width: 32px;
-  height: 32px;
-}
 
+$footerLinkTextColor: #f7f7f79c;
 $backgroundGrey: #f7f7f7;
 $blue1: #0ea5dc;
 $blue2: #0a7fab;
@@ -34,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: $backgroundGrey;
   height: 100vh; //desktop
   //   overflow: hidden;
   //   height: fit-content; //mobile
@@ -79,7 +77,6 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: $backgroundGrey;
   width: 100vw;
 }
 
@@ -105,28 +102,100 @@ body {
   border-bottom-right-radius: 2%;
 }
 
+.form {
+  margin: 0 75px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+}
+#firstName_input {
+  width: 50%;
+}
+#lastName_input {
+  width: 50%;
+}
+.firstName-container {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+}
+.lastName-container {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+}
+.company-container {
+  width: fit-content;
+}
+
+.name,
+.company-container,
+.email-container {
+  margin: 20px 0;
+}
+
+.company-container,
+.email-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  width: 30%;
+}
+.info-container {
+  margin: 0 0 0 64px;
+  position: relative;
+  top: 50px;
+}
+
 [class^="info-text-container"] {
   align-items: center;
   width: 300px;
+  img {
+    width: 32px;
+  }
+}
+.info-text-container-4 {
+  display: flex;
+}
+.info-text-4 {
+  h3,
+  h5 {
+    margin: 0 0 0 10px;
+  }
 }
 #help-icon {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
 }
 [class^="info-text-"] {
   display: flex;
 }
 .footer {
-  display: flex;
-  flex-direction: column;
   flex-shrink: 0;
   margin-top: auto;
-  background-color: $footerBlue;
   height: fit-content;
   width: 100vw;
+  background-color: $footerBlue;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+  margin: 0 3vw;
 }
 .footer-content {
-  margin: 0 auto;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  color: $backgroundGrey;
 }
 
 .table {
@@ -137,24 +206,27 @@ body {
   ul {
     list-style-type: none;
     padding: 0;
+    a {
+      color: $footerLinkTextColor;
+      text-decoration: none;
+    }
   }
 
-    h5 {
-      padding: 0;
-      margin: 0;
-    }
-  
+  h5 {
+    padding: 0;
+    margin: 0;
+  }
 }
 .col-two-container {
-  margin: 0 50px;
+  margin: 0 50px 0 180px;
 }
 .col-three-container {
-  margin: 0 50px;
+  margin: 0 100px 0 50px;
 }
 
 #footer-logo {
   position: relative;
-  top: 20px;
 }
-// .copyrights {
-// }
+.copyrights {
+  color: $footerLinkTextColor;
+}
