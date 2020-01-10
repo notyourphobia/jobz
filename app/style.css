@@ -13,7 +13,8 @@ body {
 #header-logo {
   position: relative;
   display: block;
-  margin: 0 200px;
+  margin: 0 auto;
+  left: -285px;
   width: 108px;
   padding: 15px 10px 10px;
 }
@@ -34,8 +35,9 @@ body {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  position: absolute;
-  top: 219px;
+  position: relative;
+  top: -83px;
+  left: 51px;
   background-color: #f7f7f7;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -52,23 +54,24 @@ body {
 
 .mainz-partz {
   text-align: center;
-  height: 462px;
+  padding-bottom: 140px;
   background-color: #f7f7f7;
 }
 
-.my-form {
-  position: absolute;
-  padding: 48px 81px 100px;
+.form {
+  position: relative;
+  left: -20px;
+  padding: 48px 81px 30px;
+  margin: 0 30px;
   display: inline-block;
   background-color: white;
-  z-index: 90;
 }
 
 .iconz-textz {
   display: inline-block;
   position: relative;
-  top: 60px;
-  margin-left: 60px;
+  top: -10px;
+  margin-top: 17px;
 }
 
 .daFirstz,
@@ -110,19 +113,20 @@ body {
 
 .footer {
   text-align: center;
+  position: relative;
   height: 100%;
 }
 
 .contentz {
-  margin: 30px 10px;
+  margin: 30px 10px 0;
 }
 
 .col-one {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 40px;
   color: white;
+  margin: 0 40px;
 }
 
 .col-one a {
@@ -141,17 +145,12 @@ body {
   color: rgba(255, 255, 255, 0.534);
 }
 
-.col-one h5 {
-  margin-top: 115px;
-  font-size: 8px;
-}
-
 .col-two {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 40px;
   color: white;
+  margin: 0 30px 0 63px;
 }
 
 .col-two a {
@@ -174,8 +173,8 @@ body {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 40px;
   color: white;
+  margin: 0 40px;
 }
 
 .col-three a {
@@ -198,8 +197,8 @@ body {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 40px;
   color: white;
+  margin: 0 30px;
 }
 
 .col-four a {
@@ -223,7 +222,15 @@ body {
   vertical-align: middle;
 }
 
+.lastStuff {
+  position: relative;
+  left: -230px;
+  top: 40px;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
 #footer-logo {
   width: 70px;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */

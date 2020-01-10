@@ -4,6 +4,7 @@ $blue2: #0a7fab;
 $iconBlue: #0ea5da;
 $helpLinkBlue: #2cb0e0;
 $footerBlue: #0a7fab;
+$footerTextColor: rgba(255, 255, 255, 0.534);
 
 @mixin CircleBox {
   padding: 18px;
@@ -19,7 +20,6 @@ $footerBlue: #0a7fab;
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 40px;
   color: white;
   a {
     text-decoration: none;
@@ -30,10 +30,11 @@ $footerBlue: #0a7fab;
   li {
     list-style: none;
     a {
-      color: rgba(255, 255, 255, 0.534);
+      color: $footerTextColor;
     }
   }
 }
+
 * {
   margin: 0;
 }
@@ -47,7 +48,8 @@ body {
 #header-logo {
   position: relative;
   display: block;
-  margin: 0 200px;
+  margin: 0 auto;
+  left: -285px;
   width: 108px;
   padding: 15px 10px 10px;
 }
@@ -62,9 +64,10 @@ body {
 }
 .circle {
   @include CircleBox();
-  position: absolute;
-  top: 219px;
-  // left: 345px;
+  position: relative;
+  top: -83px;
+  left: 51px;
+  //   left: 345px;
   // left: 50% ;
   background-color: $backgroundGrey;
   width: fit-content;
@@ -76,24 +79,29 @@ body {
 }
 .mainz-partz {
   text-align: center;
-  height: 462px;
+  // height: 462px;
+  padding-bottom: 140px;
   background-color: $backgroundGrey;
 }
-.my-form {
-  // left: 210px;
-
-  position: absolute;
-  padding: 48px 81px 100px;
+.form {
+  //   left: 210px;
+  position: relative;
+  left: -20px;
+  padding: 48px 81px 30px;
+  margin: 0 30px;
   display: inline-block;
   background-color: white;
-  z-index: 90;
+  //   z-index: 90;
 }
+
 .iconz-textz {
   display: inline-block;
   position: relative;
-  top: 60px;
-  margin-left: 60px;
+  top: -10px;
+  //   margin-left: 80px;
+  margin-top: 17px;
 }
+
 .daFirstz,
 .daSecondz,
 .daThirdz,
@@ -127,32 +135,35 @@ body {
 
 .footer {
   text-align: center;
+  position: relative;
+  // left: -50px;
   height: 100%;
+  // margin-top: ;
 }
 
 .contentz {
-  margin: 30px 10px;
+  margin: 30px 10px 0;
 }
 
 .col-one {
   @include footerLists();
-
-  h5 {
-    margin-top: 115px;
-    font-size: 8px;
-  }
+  margin: 0 40px;
 }
 
 .col-two {
   @include footerLists();
+  margin: 0 30px 0 63px;
 }
 
 .col-three {
   @include footerLists();
+  margin: 0 40px;
 }
 
 .col-four {
   @include footerLists();
+  margin: 0 30px;
+
   li {
     //   display: inline-block;
 
@@ -163,7 +174,15 @@ body {
     }
   }
 }
-
+.lastStuff {
+  // margin-top: 115px;
+  position: relative;
+  left: -230px;
+  top: 40px;
+  // margin: 40px 40px 80px 40px;
+  font-size: 8px;
+  color: $footerTextColor;
+}
 #footer-logo {
   width: 70px;
 }

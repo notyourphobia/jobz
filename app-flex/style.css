@@ -1,0 +1,217 @@
+img {
+  width: 100px;
+}
+
+#Tweet-icon {
+  width: 16px;
+}
+
+#Yt-icon {
+  width: 16px;
+}
+
+[id^="text-icon"] {
+  width: 32px;
+  height: 32px;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+.logo-container {
+  position: relative;
+  left: 18vw;
+  margin: 13px;
+}
+
+#header-logo {
+  width: 10vw;
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0ea5dc;
+  height: 20vh;
+}
+
+.titleText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.titleText h1 {
+  margin: 0;
+  color: white;
+  font-size: 2em;
+}
+
+.titleText h5 {
+  font-size: 1em;
+  margin: 0;
+  color: white;
+}
+
+.main {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7f7f7;
+  width: 100vw;
+}
+
+.circle {
+  padding: 18px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f7f7f7;
+  position: relative;
+  top: -60px;
+}
+
+#form-icon {
+  width: 42px;
+  padding: 5px;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.164);
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.164);
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+[class^="info-text-container"] {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+#help-icon {
+  width: 32px;
+  height: 32px;
+}
+
+[class^="info-text-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: auto;
+  background-color: #0a7fab;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+}
+
+.footer-content {
+  margin: 0 auto;
+}
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+[class^="col-"] ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+[class^="col-"] h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.col-two-container {
+  margin: 0 50px;
+}
+
+.col-three-container {
+  margin: 0 50px;
+}
+
+#footer-logo {
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
