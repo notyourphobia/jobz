@@ -140,7 +140,7 @@ body {
 }
 
 .form {
-  margin: 0 75px;
+  margin: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +148,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form input {
+  height: 30px;
+  margin: 10px 0;
 }
 
 .name {
@@ -157,26 +162,10 @@ body {
 }
 
 #firstName_input {
-  width: 50%;
+  margin-right: 20px;
 }
 
-#lastName_input {
-  width: 50%;
-}
-
-.firstName-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
+.firstName-container,
 .lastName-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -188,23 +177,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.company-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.name,
-.company-container,
-.email-container {
-  margin: 20px 0;
+.firstName-container {
+  margin-right: 10px;
+}
+
+.lastName-container {
+  margin-left: 10px;
 }
 
 .company-container,
 .email-container {
-  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,12 +202,19 @@ body {
           flex-direction: column;
 }
 
+.name,
+.company-container,
+.email-container {
+  margin-bottom: 20px;
+}
+
 .submit-btn {
   width: 30%;
+  margin-bottom: 70px;
 }
 
 .info-container {
-  margin: 0 0 0 64px;
+  margin-left: 70px;
   position: relative;
   top: 50px;
 }
@@ -232,7 +227,7 @@ body {
 }
 
 [class^="info-text-container"] img {
-  width: 32px;
+  width: 40px;
 }
 
 .info-text-container-4 {
@@ -247,8 +242,8 @@ body {
 }
 
 #help-icon {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 [class^="info-text-"] {

@@ -99,57 +99,73 @@ body {
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.164);
   border-bottom-left-radius: 2%;
+  // width: 430px;
   border-bottom-right-radius: 2%;
+  // width: 430px;
+  // margin-right: 70px;
 }
 
 .form {
-  margin: 0 75px;
+  margin: 0 30px;
   display: flex;
   flex-direction: column;
+  // width: 330px;
+  // width: 100%;
+  // width: 70%;
+  input {
+    height: 30px;
+    margin: 10px 0;
+  }
 }
 .name {
   display: flex;
+  // margin: 10px;
+  // width: 50%;
+  // justify-content: space-between;
+
+  // text-align: center;
 }
 #firstName_input {
-  width: 50%;
+  margin-right: 20px;
 }
-#lastName_input {
-  width: 50%;
-}
-.firstName-container {
-  width: fit-content;
 
-  display: flex;
-  flex-direction: column;
-}
+.firstName-container,
 .lastName-container {
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+}
+.firstName-container {
+  margin-right: 10px;
+}
+.lastName-container {
+  margin-left: 10px;
+}
+.company-container,
+.email-container {
+  // width: fit-content;
 
   display: flex;
   flex-direction: column;
 }
 .company-container {
-  width: fit-content;
+  // width: fit-content;
 }
 
 .name,
 .company-container,
 .email-container {
-  margin: 20px 0;
-}
-
-.company-container,
-.email-container {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .submit-btn {
   width: 30%;
+  margin-bottom: 70px;
 }
 .info-container {
-  margin: 0 0 0 64px;
+  margin-left: 70px;
   position: relative;
   top: 50px;
 }
@@ -158,7 +174,7 @@ body {
   align-items: center;
   width: 300px;
   img {
-    width: 32px;
+    width: 40px;
   }
 }
 .info-text-container-4 {
@@ -171,8 +187,8 @@ body {
   }
 }
 #help-icon {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 [class^="info-text-"] {
   display: flex;
