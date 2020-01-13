@@ -1,0 +1,138 @@
+$footer-blue: #0a7fab;
+$footer-text-color: rgba(255, 255, 255, 0.534);
+
+.footer {
+  background-color: $footer-blue;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 1023px) {
+    height: fit-content;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3vw;
+
+  @media (max-width: 1023px) {
+    margin-right: 0;
+  }
+}
+
+.columns {
+  width: 60vw;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media (max-width: 1023px) {
+    margin: 2.7vh 0 0 0;
+    flex-direction: column;
+    // width: 100%;
+    width: fit-content;
+    align-items: center;
+  }
+}
+
+#footer-logo {
+  width: 6vh;
+  @media (max-width: 1023px) {
+    width: 15vh;
+  }
+}
+
+[class^="column-"] {
+  color: white;
+  font-size: 0.5vw;
+
+  @media (max-width: 1023px) {
+    margin: 1vh 0;
+    font-size: 3vh;
+    width: fit-content;
+    text-align: center;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $footer-text-color;
+  }
+
+  a:hover,
+  a:active {
+    color: white;
+  }
+}
+
+.column-4 {
+  // display: flex;
+  // flex-direction: column;
+  // height: fit-content;
+  // align-items: center;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.company-item,
+.hubgets-item,
+.tweet-container,
+.yt-container {
+  font-size: 0.5vw;
+  margin: 0.3vw 0;
+
+  @media (max-width: 1023px) {
+    font-size: 2vh;
+  }
+}
+
+.tweet-container,
+.yt-container {
+  display: flex;
+
+  h5 {
+    display: inline;
+  }
+  img {
+    width: 6%;
+    height: auto;
+  }
+  @media (max-width: 1023px) {
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+.tweet-container {
+  // margin: 0.3vw 0;
+}
+.yt-container {
+  // margin: 0vw 0;
+}
+
+#tweet:hover {
+  filter: brightness(150%);
+}
+
+#yt:hover {
+  filter: brightness(150%);
+}
+
+.copyrights {
+  color: $footer-text-color;
+  font-size: 1.5vh;
+  margin-bottom: 0.6vh;
+  text-align: center;
+}

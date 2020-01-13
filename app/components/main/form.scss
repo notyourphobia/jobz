@@ -1,0 +1,168 @@
+$button-blue: #0a7fab;
+
+.form-container {
+  transform: translateX(-1%);
+  flex: 1.28;
+  margin: 0 1.5vh;
+  background-color: white;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  @media (max-width: 1023px) {
+    width: fit-content;
+    border: 0;
+    margin: 0 5vw;
+  }
+
+  @media (max-width: 1240px) {  
+    width: 80%;
+    border: 0;
+    margin: 0 5vw;
+  }
+}
+
+.form {
+  display: flex;
+  transform: translateY(-3%);
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+
+  @media (max-width: 1023px) {
+    margin: 2vh;
+    align-items: center;
+  }
+
+  @media (min-width: 2099px) {
+    width: 70%;
+  }
+
+  label {
+    font-size: 0.9vw;
+    margin-bottom: 0.7vh;
+    @media (max-width: 1023px) {
+      font-size: 4.2vw;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4% 0;
+}
+
+.firstName,
+.lastName {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+
+  @media (min-width: 2099px) {
+    width: -webkit-fill-available;
+  }
+}
+
+.lastName {
+  label {
+    position: relative;
+    left: 9.3%;
+  }
+}
+
+.company,
+.email {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1.2% 0;
+}
+
+.name,
+.company,
+.email {
+
+}
+
+#firstName,
+#lastName {
+  width: 90%;
+}
+#lastName {
+  align-self: flex-end;
+}
+
+#company,
+#email {
+  width: 100%;
+
+  // background-image: url("./resources/error-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 1vw;
+
+  @media (max-width: 1023px) {
+    background-size: 3vw;
+  }
+}
+
+#firstName,
+#lastName,
+#company,
+#email {
+  height: 2.4vw;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.4rem;
+
+  @media (max-width: 1023px) {
+    height: 6vh;
+  }
+}
+
+#error-company,
+#alert-company,
+#no-company,
+#error-email,
+#alert-email,
+#no-email{
+  display: none;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 1% 0;
+}
+
+#submit {
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: $button-blue;
+  padding: 0.7vh 2vw;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: 2099px) {
+    padding: 1.5vh 2vw;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 1.5vh 2vw;
+  }
+}
+
+.company-error {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}

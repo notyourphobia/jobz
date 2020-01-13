@@ -1,0 +1,27 @@
+$background-grey: #f7f7f7;
+
+.header {
+  background-color: $background-grey;
+  height: 14.8vh;
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto auto auto 19.1vw;
+
+  @media (max-width: 1023px) {
+    margin: auto;
+  }
+}
+
+#logo {
+  width: 9.6vw;
+
+  @media (max-width: 1023px) {
+    width: 30vw;
+  }
+}

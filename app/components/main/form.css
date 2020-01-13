@@ -1,0 +1,237 @@
+.form-container {
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
+  -webkit-box-flex: 1.28;
+      -ms-flex: 1.28;
+          flex: 1.28;
+  margin: 0 1.5vh;
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+}
+
+@media (max-width: 1023px) {
+  .form-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 0;
+    margin: 0 5vw;
+  }
+}
+
+@media (max-width: 1240px) {
+  .form-container {
+    width: 80%;
+    border: 0;
+    margin: 0 5vw;
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1023px) {
+  .form {
+    margin: 2vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 2099px) {
+  .form {
+    width: 70%;
+  }
+}
+
+.form label {
+  font-size: 0.9vw;
+  margin-bottom: 0.7vh;
+}
+
+@media (max-width: 1023px) {
+  .form label {
+    font-size: 4.2vw;
+  }
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2.4% 0;
+}
+
+.firstName,
+.lastName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (min-width: 2099px) {
+  .firstName,
+  .lastName {
+    width: -webkit-fill-available;
+  }
+}
+
+.lastName label {
+  position: relative;
+  left: 9.3%;
+}
+
+.company,
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 1.2% 0;
+}
+
+#firstName,
+#lastName {
+  width: 90%;
+}
+
+#lastName {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#company,
+#email {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 1vw;
+}
+
+@media (max-width: 1023px) {
+  #company,
+  #email {
+    background-size: 3vw;
+  }
+}
+
+#firstName,
+#lastName,
+#company,
+#email {
+  height: 2.4vw;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 1023px) {
+  #firstName,
+  #lastName,
+  #company,
+  #email {
+    height: 6vh;
+  }
+}
+
+#error-company,
+#alert-company,
+#no-company,
+#error-email,
+#alert-email,
+#no-email {
+  display: none;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1% 0;
+}
+
+#submit {
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #0a7fab;
+  padding: 0.7vh 2vw;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 2099px) {
+  #submit {
+    padding: 1.5vh 2vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  #submit {
+    padding: 1.5vh 2vw;
+  }
+}
+
+.company-error {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+/*# sourceMappingURL=form.css.map */
