@@ -1,0 +1,33 @@
+$background-grey: #f7f7f7;
+
+@mixin CircleBox {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  margin: auto;
+
+  @media (max-width: 1023px) {
+    width: 14vw;
+    height: 14vw;
+  }
+}
+
+.circle {
+  @include CircleBox();
+  position: relative;
+  transform: translateY(-50%);
+  background-color: $background-grey;
+  z-index: 100;
+  display: flex;
+
+  @media (min-width: 1023px) {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.8vw;
+  }
+}
+
+#form-icon {
+  margin: auto;
+  width: 3.5vh;
+  height: 3.5vh;
+}

@@ -1,0 +1,40 @@
+.header {
+  background-color: #f7f7f7;
+  height: 14.8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto auto auto 19.1vw;
+}
+
+@media (max-width: 1023px) {
+  .logo-container {
+    margin: auto;
+  }
+}
+
+#logo {
+  width: 9.6vw;
+}
+
+@media (max-width: 1023px) {
+  #logo {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=header.css.map */
